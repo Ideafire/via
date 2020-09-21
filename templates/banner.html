@@ -105,11 +105,6 @@ if (!isTopViaFrame()) {
   return;
 }
 
-// Inject the Hypothesis client.
-var embed_script = document.createElement("script");
-embed_script.src = "{{ h_embed_url }}";
-document.head.appendChild(embed_script);
-
 setupExternalLinkHandler("{{ external_link_mode }}");
 
 {% include "client_config.js.jinja2" %}
